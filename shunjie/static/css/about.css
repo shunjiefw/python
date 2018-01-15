@@ -1,1 +1,11 @@
 /* 关于我们 */
+.con-us{
+    text-align: center;
+}
+.con-us .wx{
+    width: 200px;
+    height: 200px;
+}
+.con-us .wx-name{
+    font-size: 18px;
+}
