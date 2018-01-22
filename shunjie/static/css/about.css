@@ -13,11 +13,21 @@
     border: 1px solid #f3f3f3;
     border-radius: 3px;
     width: 100%;
-    max-width: 100%;
-    height: auto;
     margin-bottom: 10px;
     transition: all 0.4s ease-in-out;
+    height: 186px;
+}
+.message-title{
+    height: 45px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #000;
+}
+.message-body{
+    height: 80px;
 }
 .tech .img-s:hover{
-    opacity: 0.7;
+    opacity: 0.6;
 }
