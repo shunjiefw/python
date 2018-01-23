@@ -5,19 +5,15 @@
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+
     margin-bottom: 20px;
 }
 .partner .item:hover{
-    transform: translateY(-6px);
-    -webkit-transform: translateY(-6px);
-    -moz-transform: translateY(-6px);
-    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1), 0 2px 4px 0 rgba(0,0,0,0.1);
-    -webkit-box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1), 0 2px 4px 0 rgba(0,0,0,0.1);
-    -moz-box-shadow: 0 4px 6px 0 rgba(0,0,0,0.1),0 2px 4px 0 rgba(0,0,0,0.1);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%);
+    box-shadow: 1px 4px 10px 2px #CCC;
+    -webkit-box-shadow: 1px 4px 10px 2px #CCC;
+    -moz-box-shadow: 1px 4px 10px 2px #CCC;
 }
 .partner .item img{
     width: 100%;

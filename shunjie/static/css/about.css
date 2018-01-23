@@ -6,8 +6,19 @@
     width: 200px;
     height: 200px;
 }
+.con-us .tell{
+    width: 175px;
+    height: 175px;
+    margin: 15px;
+}
 .con-us .wx-name{
     font-size: 18px;
+}
+.con-us .wx-name a{
+    color: #222222;
+}
+.con-us .wx-name a:hover{
+    text-decoration: none;
 }
 .tech .img-s{
     border: 1px solid #f3f3f3;
@@ -26,8 +37,23 @@
     color: #000;
 }
 .message-body{
-    height: 80px;
+    height: 60px;
 }
-.tech .img-s:hover{
-    opacity: 0.6;
+.block{
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.block:hover{
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%);
+    box-shadow: 1px 4px 10px 2px #CCC;
+    -webkit-box-shadow: 1px 4px 10px 2px #CCC;
+    -moz-box-shadow: 1px 4px 10px 2px #CCC;
+}
+.desc{
+    line-height: 30px;
 }
