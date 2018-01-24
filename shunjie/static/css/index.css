@@ -2,20 +2,22 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-html,body{
+html{
+    font-size: 10px;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    /* font-family: 'microsoft yahei','Proxima', sans-serif; */
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    /* color: #333; */
-    /* font-size: 15px; */
-    line-height: 1.4;
-    color: #222222;
-    background-color: #ffffff;
 }
-a:hover{
+body{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font: 16px/1.5 "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    font-size: 14px;
+    color: #777;
+    background-color: #21262d;
+}
+a:hover,a:focus{
     text-decoration: none;
 }
 .bs-docs-footer{
@@ -24,7 +26,7 @@ a:hover{
     margin-top: 100px;
     color: #99979c;
     text-align: center;
-    background-color: #2a2730;
+    background-color: #0d0b16;
 }
 .slide-image{
     width: 100%;
@@ -35,9 +37,6 @@ a:hover{
 #main{
     padding-top: 15px
 }
-#nav a{
-    font-size: 16px;
-}
 /* footer */
 footer a{
     color: #99979c;
@@ -46,10 +45,11 @@ footer a:hover{
     color: #cf000e;
 }
 .title{
-    font-size: 24px;
+    font-size: 25px;
     padding-bottom: 9px;
     margin: 40px 0 20px;
-    border-bottom: 1px solid #eee;
+    color: #fff;
+    border-bottom: 1px solid #03c9a9;
 }
 .banner-img{
     width: 100%;
@@ -58,10 +58,44 @@ footer a:hover{
     display: inline-block;
     position: fixed;
     right: 10px;
-    bottom: 140px;
+    bottom: 60px;
     width: 48px;
     height: 48px;
     background: url('/static/images/top.png') no-repeat;
     cursor: pointer;
     display: none;
+}
+.navbar-main.navbar-shadow {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -o-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+.navbar-main.navbar-main-inverse {
+    background-color: #303e4a;
+}
+#nav a{
+    color: #ffffff;
+    padding: 16px 30px 16px 20px;
+    /* margin: 15px 0; */
+    font-weight: 500;
+    background-color: transparent;
+    text-transform: capitalize;
+    border-radius: 0;
+    font-size: 1.3em;
+}
+#nav a:hover{
+    color: #03c9a9;
+    background-color: transparent;
+}
+.navbar-toggle .icon{
+    background-color: #ffffff;
+}
+.active a{
+    color: #03c9a9 !important;
+}
+.a-logo{
+    padding: 0 !important;
+    line-height: 72px;
 }
