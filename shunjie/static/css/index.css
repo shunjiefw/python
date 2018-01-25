@@ -31,9 +31,9 @@ a:hover,a:focus{
 .slide-image{
     width: 100%;
 }
-.banner{
+/* .banner{
     margin-top: 50px;
-}
+} */
 #main{
     padding-top: 15px
 }
@@ -73,7 +73,7 @@ footer a:hover{
     -o-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
 .navbar-main.navbar-main-inverse {
-    background-color: #303e4a;
+    background: rgba(0,0,0,0.6);
 }
 #nav a{
     color: #ffffff;
@@ -98,4 +98,25 @@ footer a:hover{
 .a-logo{
     padding: 0 !important;
     line-height: 72px;
+}
+#banner .item{
+    position: relative;
+}
+.title-h{
+    font-size: 62px;
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    opacity: 0;
+    animation: aniTextShow .8s forwards;
+}
+@-webkit-keyframes aniTextShow{
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
