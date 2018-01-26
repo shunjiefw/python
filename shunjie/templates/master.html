@@ -46,10 +46,13 @@
             <div id="banner" class="carousel-inner">
                 <div class="item active">
                     <img class="banner-img slide-image" src="/static/images/bg-11.jpg" alt="" style="height:100%;">
-                    <h1 class="title-h">欢迎访问顺洁！</h1>
+                    <h1 class="title-h title-h-p ani-s-t">欢迎访问顺洁！</h1>
+                    <h1 class="title-d title-d-p ani-s-l">立规矩   树诚信   洗人心   铸辉煌</h1>
                 </div>
                 <div class="item">
-                    <img class="banner-img slide-image" src="/static/images/bg-4.jpg" alt="" style="height:100%;">
+                    <img class="banner-img slide-image" src="/static/images/bg-0.jpg" alt="" style="height:100%;">
+                    <h1 class="title-h title-h-p ani-s-d" style="color:#6b6b6b;">科技  创新  环保 + 互联网</h1>
+                    <h1 class="title-d title-d-p ani-s-r title-l-0" style="color:#000;">创造环卫服务新标杆，为四川环保事业的发展添砖加瓦</h1>
                 </div>
             </div>
         </div>
@@ -61,6 +64,7 @@
         <div class="container">
             <p>Copyright © 2018 &nbsp; <a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备18001078号</a></p>
         </div>
+        <script src="https://s22.cnzz.com/z_stat.php?id=1272839151&web_id=1272839151" language="JavaScript"></script>
     </footer>
     <span id="top" class="top"></span>
     <script src="/static/js/jquery.js"></script>
@@ -69,7 +73,6 @@
 </body>
 <script>
     var h = document.documentElement.clientHeight || document.body.clientHeight; 
-    console.log(h)
     $(window).scroll(function() {
         if ($(this).scrollTop() != 0) {
             $('#top').fadeIn();
@@ -81,6 +84,10 @@
         $('body,html').animate({ scrollTop: 0 }, 400);
     })
     $(document).ready(function(){
+        $("#banner .item").css('height',h);
+    });
+    $(window).resize(function() {
+        var h = document.documentElement.clientHeight || document.body.clientHeight; 
         $("#banner .item").css('height',h);
     });
 </script>
