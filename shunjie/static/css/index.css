@@ -119,15 +119,31 @@ footer a:hover{
     position: absolute; left:5%;
 }
 .ani-s-d{
+    -webkit-animation: aniTextShowDown 1s forwards;
+    -moz-animation: aniTextShowDown 1s forwards;
+    -o-animation: aniTextShowDown 1s forwards;
+    -ms-animation: aniTextShowDown 1s forwards;
     animation: aniTextShowDown 1s forwards;
 }
 .ani-s-r{
+    -webkit-animation: aniTextShowRight 1s forwards;
+    -moz-animation: aniTextShowRight 1s forwards;
+    -o-animation: aniTextShowRight 1s forwards;
+    -ms-animation: aniTextShowRight 1s forwards;
     animation: aniTextShowRight 1s forwards;
 }
 .ani-s-l{
+    -webkit-animation: aniTextShowLeft 1s forwards;
+    -moz-animation: aniTextShowLeft 1s forwards;
+    -o-animation: aniTextShowLeft 1s forwards;
+    -ms-animation: aniTextShowLeft 1s forwards;
     animation: aniTextShowLeft 1s forwards;
 }
 .ani-s-t{
+    -webkit-animation: aniTextShowTop 1s forwards;
+    -moz-animation: aniTextShowTop 1s forwards;
+    -o-animation: aniTextShowTop 1s forwards;
+    -ms-animation: aniTextShowTop 1s forwards;
     animation: aniTextShowTop 1s forwards;
 }
 @media (max-width: 768px){
@@ -146,6 +162,36 @@ footer a:hover{
     }
 }
 @-webkit-keyframes aniTextShowDown{
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-o-keyframes aniTextShowDown{
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-ms-keyframes aniTextShowDown{
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-ms-keyframes aniTextShowDown{
     0% {
         opacity: 0;
         transform: translateY(150px);
@@ -185,6 +231,7 @@ footer a:hover{
         transform: translateX(0);
     }
 }
+
 .home .block{
     margin: 80px 0 30px 0;
     border: 1px solid #21262d;
