@@ -1,72 +1,30 @@
 /* 关于我们 */
-.con-us{
-    text-align: center;
+.service-idea{
+    padding: 20px 0;
 }
-.con-us .wx{
-    width: 200px;
-    height: 200px;
+.service-idea .title{
+    color: #ffffff;
 }
-.con-us .tell{
-    width: 175px;
-    height: 175px;
-    margin: 15px;
+.service-idea .title-p{
+    color: #ffffff;
 }
-.con-us .wx-name{
-    font-size: 18px;
-}
-.con-us .wx-name a{
-    color: #777;
-}
-.con-us .wx-name a:hover{
-    text-decoration: none;
-}
-.tech .img-s{
+.service-idea .img-s{
     border-radius: 3px;
     width: 100%;
     margin-bottom: 10px;
-    transition: all 0.4s ease-in-out;
     height: 186px;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    -ms-transition: all .2s linear;
-    transition: all .2s linear;
     display: block;
 }
-.img-b{
-    height: 250px !important;
-}
-.message-title{
-    height: 45px;
+.service-idea .message-title{
     text-align: left;
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     color: #fff;
 }
-.message-body{
-    height: 60px;
+.service-idea .message-body{
     line-height: 1.65;
 }
-.block{
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-.block .block-image{
-    overflow: hidden;
-    height: 186px;
-}
-.block-image:hover .img-s{
-    -webkit-transform: scale(1.1, 1.1);
-    -moz-transform: scale(1.1, 1.1);
-    -o-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
-}
-.desc{
-    line-height: 30px;
+.vision{
+    padding: 30px 0;
 }
