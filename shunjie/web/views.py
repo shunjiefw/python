@@ -17,5 +17,5 @@ def about(req):
 def projects(req):
     return render(req,'web/projects.html')
 
-def cases(req):
+def cases(req,case_name="aa"):
     return render(req,'web/case.html')

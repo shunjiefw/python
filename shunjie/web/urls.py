@@ -7,5 +7,6 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),    #联系我们
     path('about/', views.about, name='about'),          #关于我们
     path('projects/', views.projects, name='projects'), #服务项目
-    path('cases/', views.cases, name='case'),         #服务案例
+    path('cases/', views.cases, name='case'),           #服务案例
+    path('cases/<str:case_name>/', views.cases, name='case'),           #服务案例
 ]
