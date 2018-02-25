@@ -1,1 +1,15 @@
 /* 首页 */
+.wel-word{
+    background-color: #2D2D2D;
+    width: 100%;
+    height: 750px;
+    /* background: url('/static/images/welcome_bg.jpg') no-repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/welcome_bg.jpg', sizingMethod='scale');
+    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/welcome_bg.jpg', sizingMethod='scale');
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover; */
+}
+#wel-bg{
+    background-image: url('/static/images/welcome_bg.jpg');
+}
