@@ -28,3 +28,9 @@
 .vision{
     padding: 30px 0;
 }
+.us-info img{
+    width: 100%;
+}
+.us-info .desc{
+    padding: 10px 0;
+}

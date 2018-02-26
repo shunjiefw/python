@@ -2,13 +2,146 @@
 {% load static %}
 {% block title %}服务项目-顺洁{% endblock %}
 {% block css %}
-<link rel="stylesheet" href="{% static "css/about.css" %}">
+<link rel="stylesheet" href="{% static "css/project.css" %}">
 {% endblock %}
 {% block content %}
 <div class="container">
     <div class="center pd-40">
         <h1 class="title">服务项目</h1>
         <p class="title-p">SERVER PROJECT</p>
+        <div class="service-detail">
+            <div class="row">
+                <div class="col-md-4 item">
+                    <div class="ser-pro">
+                        <img src="{% static "images/pip_rec.jpg" %}" alt="">
+                        <div class="detail">
+                            <p class="title">管道改造</p>
+                            <p>大型楼盘管道维护改造整体工程</p>
+                            <p class="tips"><span class="icon">></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="ser-pro">
+                        <img src="{% static "images/pip_rush.jpg" %}" alt="">
+                        <div class="detail">
+                            <p class="title">管道疏通</p>
+                            <p>下水管道疏通，化粪池吸污、运污</p>
+                            <p class="tips"><span class="icon">></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="ser-pro">
+                        <img src="{% static "images/pip_fix.jpg" %}" alt="">
+                        <div class="detail">
+                            <p class="title">管道维修</p>
+                            <p>家庭下水道维修及各类地下管道更换</p>
+                            <p class="tips"><span class="icon">></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="title">服务特色</h1>
+        <p class="title-p">SERVER FEATURES</p>
+        <div class="serv-cha">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="{% static "images/dev.jpg" %}" alt="">
+                        <div class="name">专业设备</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="{% static "images/professional.jpg" %}" alt="">
+                        <div class="name">专业人员</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="{% static "images/plan.jpg" %}" alt="">
+                        <div class="name">整体规划</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item">
+                        <img src="{% static "images/service.jpg" %}" alt="">
+                        <div class="name">精准服务</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="name-title">家庭管道专业疏通工具</div>
+        <div class="tools row">
+            <div class="col-md-2">
+                <div class="block-img">
+                    <img src="{% static "images/tools/1.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">1</div>
+                <div class="msg-body">2</div>
+            </div>
+            <div class="col-md-2">
+                <div class="block-img">
+                    <img src="{% static "images/tools/2.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">1</div>
+                <div class="msg-body">2</div>
+            </div>
+            <div class="col-md-2">
+                <div class="block-img">
+                    <img src="{% static "images/tools/3.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">1</div>
+                <div class="msg-body">2</div>
+            </div>
+            <div class="col-md-2">
+                <div class="block-img">
+                    <img src="{% static "images/tools/4.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">1</div>
+                <div class="msg-body">2</div>
+            </div>
+            <div class="col-md-2">
+                <div class="block-img">
+                    <img src="{% static "images/tools/5.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">1</div>
+                <div class="msg-body">2</div>
+            </div>
+            <div class="col-md-2">
+                <div class="block-img">
+                    <img src="{% static "images/tools/6.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">1</div>
+                <div class="msg-body">2</div>
+            </div>
+        </div>
+        <div class="name-title">集团客户管道疏通</div>
+        <div class="tools row">
+            <div class="col-md-4 item-jt">
+                <div class="block-img">
+                    <img src="{% static "images/dx/dgnws.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">多功能污水处理车</div>
+                <div class="msg-body">2</div>
+            </div>
+            <div class="col-md-4 item-jt">
+                <div class="block-img">
+                    <img src="{% static "images/dx/lhst.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">联合疏通车</div>
+                <div class="msg-body">2</div>
+            </div>
+            <div class="col-md-4 item-jt">
+                <div class="block-img">
+                    <img src="{% static "images/dx/xwc.jpg" %}" alt="">
+                </div>
+                <div class="msg-title">吸污车</div>
+                <div class="msg-body">2</div>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -1,15 +1,81 @@
 /* 首页 */
-.wel-word{
-    background-color: #2D2D2D;
+.plate{
+    padding: 30px 50px;
+}
+.plate .line-s{
+    margin-top: -50px;
+}
+.service-detail{
+    padding: 10px 30px;
+}
+.service-detail .ser-pro{
+    background-color: #CCBA7C;
+    color: #fff;
+    margin: 15px 0;
+}
+.service-detail .ser-pro img{
     width: 100%;
-    height: 750px;
-    /* background: url('/static/images/welcome_bg.jpg') no-repeat;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/welcome_bg.jpg', sizingMethod='scale');
-    -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/welcome_bg.jpg', sizingMethod='scale');
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover; */
 }
-#wel-bg{
-    background-image: url('/static/images/welcome_bg.jpg');
+.service-detail .ser-pro .detail{
+    height: 150px;
+    text-align: center;
 }
+.service-detail .ser-pro .detail p{
+    margin: 20px;
+}
+.service-detail .ser-pro .detail .title{
+    font-size: 22px;
+    color: #fff;
+}
+.service-detail .ser-pro .detail .tips .icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #fff;
+    color: #CCBA7C;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.wel-word .rel-wel{
+    position: relative;
+}
+.des{
+    padding: 0 5px;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+}
+.des .title{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 22px;
+}
+.des .ms{
+    padding: 0 100px;
+    font-size: 14px;
+    line-height: 2;
+}
+.img-wel{
+    width: 100%;
+}
+@media (max-width: 768px){
+    .plate .line-s {
+        margin-top: 0px;
+    }
+    .item-plate{
+        padding: 10px 0;
+    }
+    .des{
+        top: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.6);
+    }
+    .des .ms{
+        padding: 0;
+        line-height: 1.5;
+        color: #fff;
+    }
+}
+
