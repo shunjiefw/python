@@ -1,0 +1,27 @@
+{% extends 'web/master.html' %}
+{% load static %}
+{% block title %}服务案列-顺洁{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static "css/project.css" %}">
+{% endblock %}
+{% block content %}
+<div class="case">
+    <div class="container">
+        <div class="project-item">
+            <div class="center">
+                <h1 class="title">服务项目</h1>
+                <p class="title-p">SERVER PROJECT</p>
+                <img class="img" src="{% static "images/pip_rush_big.jpg" %}" alt="">
+            </div>
+            <div class="project-body">
+                <div class="items-pro center">
+                    <h1 class="title">管道疏通</h1>
+                </div>
+            </div>
+            <section class="section-detail">
+                管道改造管道改造管道改造管道改造管道改造管道改造管道改造
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}

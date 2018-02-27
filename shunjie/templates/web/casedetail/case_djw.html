@@ -1,0 +1,27 @@
+{% extends 'web/master.html' %}
+{% load static %}
+{% block title %}服务案列-顺洁{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static "css/case.css" %}">
+{% endblock %}
+{% block content %}
+<div class="case">
+    <div class="container">
+        <div class="center">
+            <h1 class="title">金沙大镜湾</h1>
+            <p class="title-p">CASE PRESENTATION</p>
+        </div>
+        <div class="case-body">
+            <div class="items-case">
+                <img class="img" src="{% static "images/case/djw/1.jpg" %}" alt="">
+                <img class="img" src="{% static "images/case/djw/2.jpg" %}" alt="">
+                <img class="img" src="{% static "images/case/djw/3.jpg" %}" alt="">
+                <img class="img" src="{% static "images/case/djw/4.jpg" %}" alt="">
+                <img class="img" src="{% static "images/case/djw/5.jpg" %}" alt="">
+                <img class="img" src="{% static "images/case/djw/6.jpg" %}" alt="">
+                <img class="img" src="{% static "images/case/djw/7.jpg" %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

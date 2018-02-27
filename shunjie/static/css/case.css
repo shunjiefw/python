@@ -1,0 +1,29 @@
+/* 案列 */
+.case-body{
+    padding: 20px 0;
+}
+.case-body .img{
+    width: 100%;
+}
+.case-body .item{
+    margin: 15px 0;
+}
+.item-lg{
+    text-align: center;
+    margin: 15px 0;
+}
+.items-case{
+    padding: 0 80px;
+}
+.items-case .img{
+    width: 100%;
+}
+.case-name{
+    font-size: 18px;
+    color: #807878;
+}
+@media (max-width: 768px){
+    .items-case{
+        padding: 0 15px;
+    }
+}

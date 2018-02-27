@@ -15,30 +15,7 @@
     {% block css %}{% endblock %}
 </head>
 <body>
-    <nav class="navbar navbar-main navbar-main-inverse navbar-shadow  navbar-fixed-top ">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                </button>
-                <a class="navbar-brand a-logo" href="/">
-                    <img alt="Brand" src="{% static "images/logo.png" %}">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul id="nav" class="nav navbar-nav navbar-right">
-                    <li {% if request.path == '/' %}class="active"{% endif %}><a href="/" class="smoothScroll">主页</a></li>
-                    <li {% if request.path == '/about/' %}class="active"{% endif %}><a href="/about" class="smoothScroll">关于我们</a></li>
-                    <li {% if request.path == '/projects/' %}class="active"{% endif %}><a href="/projects" class="smoothScroll">服务项目</a></li>
-                    <li {% if request.path == '/cases/' %}class="active"{% endif %}><a href="/cases" class="smoothScroll">服务案例</a></li>
-                    <li {% if request.path == '/jobs/' %}class="active"{% endif %}><a href="/jobs" class="smoothScroll">人才招聘</a></li>
-                    <li {% if request.path == '/contact/' %}class="active"{% endif %}><a href="/contact" class="smoothScroll">联系我们</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
     <div class="banner">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -63,6 +40,30 @@
             </div>
         </div>
     </div>
+    <nav id="nav" class="navbar navbar-main navbar-main-inverse navbar-shadow">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a id="nav-a" class="navbar-brand a-logo" href="/">
+                    <img class="nav-img" alt="Brand" src="{% static "images/logo_nav.png" %}">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul id="nav" class="nav navbar-nav navbar-right">
+                    <li {% if request.path == '/' %}class="active"{% endif %}><a href="/" class="smoothScroll">主页</a></li>
+                    <li {% if request.path == '/about/' %}class="active"{% endif %}><a href="/about" class="smoothScroll">关于我们</a></li>
+                    <li {% if request.path == '/projects/' %}class="active"{% endif %}><a href="/projects" class="smoothScroll">服务项目</a></li>
+                    <li {% if request.path == '/cases/' %}class="active"{% endif %}><a href="/cases" class="smoothScroll">服务案例</a></li>
+                    <li {% if request.path == '/jobs/' %}class="active"{% endif %}><a href="/jobs" class="smoothScroll">人才招聘</a></li>
+                    <li {% if request.path == '/contact/' %}class="active"{% endif %}><a href="/contact" class="smoothScroll">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section id="main">
         {% block content %}{% endblock %}
     </section>
@@ -134,12 +135,25 @@
                     </div>
                 </div>
                 <div class="col-md-3 item">
-                    <h3>导航</h3>
-                    <p class="en">NAVIGATION</p>
+                    <h3>联系我们</h3>
+                    <p class="en">CONTACT</p>
                     <div class="links">
-                        4
+                        <ul>
+                            <li>
+                                <a href="tel:13183813382">13183813382</a>
+                            </li>
+                            <li>
+                                    微信公众号：成都顺洁环卫
+                            </li>
+                            <li>
+                                邮箱：<a href="mailto:807451203@qq.com">807451203@qq.com</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+            <div class="row center">
+                <p>Copyright © 2018 &nbsp; <a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备18001078号</a></p>
             </div>
         </div>
         <!-- <script src="https://s22.cnzz.com/z_stat.php?id=1272839151&web_id=1272839151" language="JavaScript"></script> -->
@@ -151,23 +165,16 @@
 </body>
 <script>
     $(window).scroll(function() {
-        if ($(this).scrollTop() != 0) {
+        if ($(this).scrollTop() > 1000) {
             $('#top').fadeIn();
         } else {
             $('#top').fadeOut();
         }
     });
-    /*$(document).ready(function(){
-        var h = document.documentElement.clientHeight || document.body.clientHeight; 
+    $(document).ready(function(){
         $('#top').click(function() {
             $('body,html').animate({ scrollTop: 0 }, 400);
         })
-        $("#banner .item").css('height',h);
     });
-    $(window).resize(function() {
-        var h = document.documentElement.clientHeight || document.body.clientHeight; 
-        $("#banner .item").css('height',h);
-    });
-    */
 </script>
 </html>

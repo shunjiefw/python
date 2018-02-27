@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}服务案列-顺洁{% endblock %}
 {% block css %}
-<link rel="stylesheet" href="{% static "css/job.css" %}">
+<link rel="stylesheet" href="{% static "css/case.css" %}">
 {% endblock %}
 {% block content %}
 <div class="case">
@@ -11,9 +11,62 @@
             <h1 class="title">案例演示</h1>
             <p class="title-p">CASE PRESENTATION</p>
         </div>
+        <div class="case-body">
+            <div class="row">
+                <div class="col-md-6 item">
+                    <a href="/cases/1/" title="粼江峰阁">
+                        <img class="img" src="{% static "images/case/ljfg.jpg" %}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 item">
+                    <a href="/cases/2/" title="都会风尚">
+                        <img class="img" src="{% static "images/case/ghls.jpg" %}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 item">
+                    <a href="/cases/3/" title="金沙大镜湾">
+                        <img class="img" src="{% static "images/case/dhfs.jpg" %}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 item">
+                    <a href="/cases/4/" title="金沙大镜湾">
+                        <img class="img" src="{% static "images/case/jsdjw.jpg" %}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="center">
             <h1 class="title">合作企业</h1>
             <p class="title-p">THE COOPERATIVE ENTERPRISE</p>
+        </div>
+        <div class="case-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="item-lg">
+                        <img src="{% static "images/qy/wk.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item-lg">
+                        <img src="{% static "images/qy/hd.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item-lg">
+                        <img src="{% static "images/qy/hr.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item-lg">
+                        <img src="{% static "images/qy/lh.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="item-lg">
+                        <img src="{% static "images/qy/lg.png" %}" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

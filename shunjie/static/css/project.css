@@ -65,3 +65,10 @@
 .item-jt .block-img img{
     height: 230px;
 }
+.section-detail{
+    padding: 20px;
+    color: #000;
+}
+.project-item{
+    padding: 0 30px;
+}
