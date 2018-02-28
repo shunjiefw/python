@@ -2,3 +2,51 @@
 .jobs{
     padding: 20px 0;
 }
+.jobs .bg-detail{
+    position: relative;
+}
+.jobs .bg-detail .item{
+    position: absolute;
+    top: 30px;
+    background-color: #57546F;
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+}
+.jobs .bg-detail .item .title{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 20px;
+}
+.jobs .bg-detail .item .sm{
+    font-size: 6px;
+    color: #fff;
+}
+.jobs .bg-detail .item .detail{
+    background-color: #CCBA7C;
+    padding: 8px 25px;
+    z-index: 100;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+.msg{
+    line-height: 1.5;
+    text-align: left;
+}
+.jobs .bg-detail .item .detail h4{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+.jobs .bg-detail .wages{
+    top: 100px;
+    width: 60%;
+}
+.jobs .bg-detail .resume{
+    top: 170px;
+    width: 50%;
+}
+.text-l{
+    text-align: left;
+}
