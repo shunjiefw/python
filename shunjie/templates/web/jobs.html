@@ -13,9 +13,9 @@
         </div>
         <div class="bg-detail">
             <img class="img" src="{% static "images/job_bg.jpg" %}" alt="">
-            <div class="item plane">
+            <div class="JS_title item plane">
                 <span class="sm">岗位介绍、前景</span><span class="title">人才计划</span>
-                <div class="detail" style="display:none;">
+                <div class="JS_item detail">
                     <h4>行业前景</h4>
                     <div class="msg">环卫服务业是城市公用事业的一部分，工作内容为对城市环境卫生和市容市貌进行维护。如今随着我国快速的城镇化发展， 政府在城乡基础建设和市容环境卫生方面的投入也在加大。各项环卫工程都逐渐步入了科技化、环保化服务的进程，越来越多的年轻人和团队涌入其中，环卫服务业需求也愈加明显。</div>
                     <h4>岗位介绍</h4>
@@ -42,21 +42,52 @@
                     </div>
                 </div>
             </div>
-            <div class="item wages">
+            <div class="JS_title item wages">
                 <span class="sm">福利待遇、培训晋升</span><span class="title">人才计划</span>
-                <div class="detail text-l">
+                <div class="JS_item detail text-l">
                     <dl>
-                        <dt>出差津贴</dt>
+                        <dt>1.出差津贴</dt>
                         <dd>出差外地的人员根据相应级别均可得到该项津贴。</dd>
-                        <dt>通讯费用津贴</dt>
+                        <dt>2.通讯费用津贴</dt>
                         <dd>公司按你所被聘的职位给你提供相应的通讯费用津贴。</dd>
+                        <dt>3.节日慰问金</dt>
+                        <dd>每年元旦、春节、五一节、中秋节、国庆节员工都会得到此项津贴，此外女性员工在三八节还会得到专项津贴。</dd>
+                        <dt>4.祝贺慰问金</dt>
+                        <dd>员工结婚、生日、有小孩诞生或直系亲属去世，公司将送上祝贺、慰问金。</dd>
+                        <dt>5.五险一金</dt>
+                        <dd>公司依照国家规定为员工购买社保及住房公积金。</dd>
+                        <dt>6.休假政策</dt>
+                        <dd>享受各类国家法定节假日休息，如遇工程处理，则按照国家规定补贴工资；服务满一年的员工可享受7个工作日的年休假，逐年递增。</dd>
+                        <dt>7.旅游福利</dt>
+                        <dd>业绩或绩效成绩达标的员工，享受公司每年组织境内外旅游。</dd>
+                        <dt>8.培训晋升</dt>
+                        <dd>优秀员工将享有每季度提升培训，快速成长晋升。</dd>
                     </dl>
                 </div>
             </div>
-            <div class="item resume">
+            <div class="JS_title item resume">
                 <span class="title">人才计划</span>
+                <div class="JS_item detail">
+                    <div class="main-plane">
+                        <p><a href="mailto:807451203@qq.com">投 递 链 接</a></p>
+                        <p><a href="javascript:;">模 板 下 载</a></p>
+                        <span>Email:807451203@qq.com</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+{% endblock %}
+{% block js %}
+<script>
+    $(document).ready(function(){
+        $(".JS_title").bind("click",function(){
+            $(this).children('.detail').toggle(200);
+        });
+        $(".JS_item").bind("click",function(event){
+            event.stopPropagation();
+        })
+    });
+</script>
 {% endblock %}
