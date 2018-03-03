@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="{%static "images/favicon.ico" %}" type="image/x-icon">
     <link rel="stylesheet" href="{%static "css/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "css/common.css" %}">
+    <link rel="stylesheet" href="{% static "css/plugin/animate.min.css" %}">
     {% block css %}{% endblock %}
 </head>
 <body>
@@ -26,16 +27,16 @@
             </ol>
             <div id="banner" class="carousel-inner">
                 <div class="item active">
-                    <img class="banner-img slide-image" src="{% static "images/BANNER1.jpg" %}" style="width:100%;">
+                    <img class="banner-img slide-image" src="{% static "images/BANNER1.jpg" %}" style="width:100%;height:100%;">
                 </div>
                 <div class="item">
-                    <img class="banner-img slide-image" src="{% static "images/BANNER2.jpg" %}" style="width:100%;">
+                    <img class="banner-img slide-image" src="{% static "images/BANNER2.jpg" %}" style="width:100%;height:100%;">
                 </div>
                 <div class="item">
-                    <img class="banner-img slide-image" src="{% static "images/BANNER3.jpg" %}" style="width:100%;">
+                    <img class="banner-img slide-image" src="{% static "images/BANNER3.jpg" %}" style="width:100%;height:100%;">
                 </div>
                 <div class="item">
-                    <img class="banner-img slide-image" src="{% static "images/BANNER4.jpg" %}" style="width:100%;">
+                    <img class="banner-img slide-image" src="{% static "images/BANNER4.jpg" %}" style="width:100%;height:100%;">
                 </div>
             </div>
         </div>
@@ -53,7 +54,7 @@
                 </a>
             </div>
             <div class="collapse navbar-collapse">
-                <ul id="nav" class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
                     <li {% if request.path == '/' %}class="active"{% endif %}><a href="/" class="smoothScroll">主页</a></li>
                     <li {% if request.path == '/about/' %}class="active"{% endif %}><a href="/about" class="smoothScroll">关于我们</a></li>
                     <li {% if request.path == '/projects/' %}class="active"{% endif %}><a href="/projects" class="smoothScroll">服务项目</a></li>
@@ -161,6 +162,7 @@
     <span id="top" class="top"></span>
     <script src="{% static "js/jquery.js" %}"></script>
     <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/wow.min.js" %}"></script>
     {% block js %}{% endblock %}
 </body>
 <script>
@@ -171,9 +173,47 @@
             $('#top').fadeOut();
         }
     });
+    /*
+    * 判断终端类型
+    */
+
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+                    "SymbianOS", "Windows Phone",
+                    "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        return flag;
+    }
     $(document).ready(function(){
+        var flage = IsPC();
+        new WOW().init();
         $('#top').click(function() {
             $('body,html').animate({ scrollTop: 0 }, 400);
+        });
+        $(window).scroll(function(){
+            if(flage){
+                //PC
+                if($(window).scrollTop() > 470){
+                    $("#nav").addClass("navbar-fixed-top");
+                }else{
+                    $("#nav").removeClass("navbar-fixed-top");
+                }
+            }else{
+                //mob
+                if($(window).scrollTop() > 220){
+                    $("#nav").addClass("navbar-fixed-top");
+                }else{
+                    $("#nav").removeClass("navbar-fixed-top");
+                }
+            }
+            
         });
     });
 </script>

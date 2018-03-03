@@ -7,6 +7,7 @@
 }
 .case-body .item{
     margin: 15px 0;
+    padding: 0 20px;
 }
 .item-lg{
     text-align: center;
@@ -28,4 +29,32 @@
     .items-case{
         padding: 0 15px;
     }
+}
+.a-case{
+    display: inline-block;
+    position: relative;
+}
+.a-case .hov{
+    background: rgba(1, 1, 1,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 300px;
+    display: none;
+    
+}
+.a-case:hover .hov{
+    display: block;
+}
+.a-case .hov>span{
+    padding: 5px 15px;
+    -webkit-border: 1px solid #fff;
+    -moz-border: 1px solid #fff;
+    -ms-border: 1px solid #fff;
+    -o-border: 1px solid #fff;
+    border: 1px solid #fff;
+    font-size: 15px;
+    border-radius: 2px;
 }

@@ -77,3 +77,21 @@
     color: #fff;
     text-decoration: none;
 }
+@media (max-width: 768px){
+    .jobs .bg-detail .item .detail{
+        height: 250px;
+        overflow-y: auto;
+    }
+    #JS_pay{
+        height: 190px;
+    }
+    #JS_resume{
+        height: 130px;
+    }
+    .main-plane{
+        padding: 0;
+    }
+    .jobs .bg-detail .item{
+        width: 100% !important;
+    }
+}

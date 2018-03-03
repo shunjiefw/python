@@ -128,3 +128,28 @@ ul li{
     color: #CCBA7C;
     text-decoration: none;
 }
+.navbar-toggle .icon-bar{
+    background-color: #57546F;
+}
+.navbar-toggle{
+    padding-top: 18px;
+}
+@media (min-width: 768px){  
+    #banner{
+        height: 470px;
+    }
+    #banner .item{
+        height: 470px;
+    }
+}
+@media (max-width: 768px){  
+    #banner{
+        height: 220px;
+    }
+    #banner .item{
+        height: 220px;
+    }
+}
+.navbar-fixed-top{
+    background: rgba(204, 186, 124, 0.7) !important;
+}
