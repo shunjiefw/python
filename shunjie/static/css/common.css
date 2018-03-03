@@ -136,10 +136,10 @@ ul li{
 }
 @media (min-width: 768px){  
     #banner{
-        height: 470px;
+        height: 500px;
     }
     #banner .item{
-        height: 470px;
+        height: 500px;
     }
 }
 @media (max-width: 768px){  
@@ -152,4 +152,15 @@ ul li{
 }
 .navbar-fixed-top{
     background: rgba(204, 186, 124, 0.7) !important;
+}
+#nav .container{
+    position: relative;
+}
+.a-banner{
+    position: absolute;
+    top: -450px;
+    left: 0;
+}
+.a-banner img{
+    width: 80px;
 }

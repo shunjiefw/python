@@ -16,7 +16,6 @@
     {% block css %}{% endblock %}
 </head>
 <body>
-    
     <div class="banner">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -53,6 +52,7 @@
                     <img class="nav-img" alt="Brand" src="{% static "images/logo_nav.png" %}">
                 </a>
             </div>
+            <a class="a-banner" href="/"><img src="{% static "images/logo_banner.png" %}" alt=""></a>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li {% if request.path == '/' %}class="active"{% endif %}><a href="/" class="smoothScroll">主页</a></li>
@@ -78,16 +78,16 @@
                     <div class="links">
                         <ul>
                             <li>
-                                <a href="">关于我们</a>
+                                <a href="/about">关于我们</a>
                             </li>
                             <li>
-                                <a href="">人才</a>
+                                <a href="/jobs">人才</a>
                             </li>
                             <li>
-                                <a href="">合作伙伴</a>
+                                <a href="/cases">合作伙伴</a>
                             </li>
                             <li>
-                                <a href="">业务合作</a>
+                                <a href="javascript:;">业务合作</a>
                             </li>
                         </ul>
                     </div>
@@ -98,7 +98,7 @@
                     <div class="links">
                         <ul>
                             <li>
-                                <a href="">服务理念</a>
+                                <a href="javascript:;">服务理念</a>
                             </li>
                             <li>
                                 <a href="/cases">服务案列</a>
@@ -144,7 +144,7 @@
                                 <a href="tel:13183813382">13183813382</a>
                             </li>
                             <li>
-                                    微信公众号：成都顺洁环卫
+                                微信公众号：成都顺洁环卫
                             </li>
                             <li>
                                 邮箱：<a href="mailto:807451203@qq.com">807451203@qq.com</a>
@@ -195,19 +195,19 @@
         var flage = IsPC();
         new WOW().init();
         $('#top').click(function() {
-            $('body,html').animate({ scrollTop: 0 }, 400);
+            $('body,html').animate({ scrollTop: 0 }, 350);
         });
         $(window).scroll(function(){
             if(flage){
                 //PC
-                if($(window).scrollTop() > 470){
+                if($(window).scrollTop() > 500){
                     $("#nav").addClass("navbar-fixed-top");
                 }else{
                     $("#nav").removeClass("navbar-fixed-top");
                 }
             }else{
                 //mob
-                if($(window).scrollTop() > 220){
+                if($(window).scrollTop() > 210){
                     $("#nav").addClass("navbar-fixed-top");
                 }else{
                     $("#nav").removeClass("navbar-fixed-top");
