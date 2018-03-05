@@ -16,7 +16,7 @@
     {% block css %}{% endblock %}
 </head>
 <body>
-    <div class="banner">
+    <div class="banner container" style="padding:0;">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -41,15 +41,19 @@
         </div>
     </div>
     <nav id="nav" class="navbar navbar-main navbar-main-inverse navbar-shadow">
-        <div class="container">
+        <div class="container" style="padding-right:0;">
             <div class="navbar-header">
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                 </button>
-                <a id="nav-a" class="navbar-brand a-logo" href="/">
-                    <img class="nav-img" alt="Brand" src="{% static "images/logo_nav.png" %}">
+                <a id="nav-a" class="navbar-brand a-logo clearfix" href="/">
+                    <img class="nav-img fl" alt="Brand" src="{% static "images/logo_nav.png" %}">
+                    <div class="txt fl">
+                        <div class="title">让生活更美好</div>
+                        <div class="en-title">Make life better</div>
+                    </div>
                 </a>
             </div>
             <a class="a-banner" href="/"><img src="{% static "images/logo_banner.png" %}" alt=""></a>
@@ -69,93 +73,108 @@
         {% block content %}{% endblock %}
     </section>
     <!-- footer -->
-    <footer class="color-d">
-        <div class="container">
-            <div id="main_footer" class="row">
-                <div class="col-md-3 item">
-                    <h3>浏览</h3>
-                    <p class="en">BROWSE</p>
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <a href="/about">关于我们</a>
-                            </li>
-                            <li>
-                                <a href="/jobs">人才</a>
-                            </li>
-                            <li>
-                                <a href="/cases">合作伙伴</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">业务合作</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 item">
-                    <h3>服务</h3>
-                    <p class="en">SERVICES</p>
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <a href="javascript:;">服务理念</a>
-                            </li>
-                            <li>
-                                <a href="/cases">服务案列</a>
-                            </li>
-                            <li>
-                                <a href="/projects">项目介绍</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 item">
-                    <h3>导航</h3>
-                    <p class="en">NAVIGATION</p>
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <a href="/">主页</a>
-                            </li>
-                            <li>
-                                <a href="/about">关于我们</a>
-                            </li>
-                            <li>
-                                <a href="/projects">服务项目</a>
-                            </li>
-                            <li>
-                                <a href="/cases">服务案列</a>
-                            </li>
-                            <li>
-                                <a href="/jobs">人才招聘</a>
-                            </li>
-                            <li>
-                                <a href="/contact">联系我们</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 item">
-                    <h3>联系我们</h3>
-                    <p class="en">CONTACT</p>
-                    <div class="links">
-                        <ul>
-                            <li>
-                                <a href="tel:13183813382">13183813382</a>
-                            </li>
-                            <li>
-                                微信公众号：成都顺洁环卫
-                            </li>
-                            <li>
-                                邮箱：<a href="mailto:807451203@qq.com">807451203@qq.com</a>
-                            </li>
-                        </ul>
-                    </div>
+    <footer class="color-d container">
+        <div id="main_footer" class="row">
+            <div class="col-md-3 col-xs-6 item">
+                <h3>浏览</h3>
+                <p class="en">BROWSE</p>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="/about">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="/jobs">人才</a>
+                        </li>
+                        <li>
+                            <a href="/cases">合作伙伴</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">业务合作</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="row center">
-                <p>Copyright © 2018 &nbsp; <a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备18001078号</a></p>
+            <div class="col-md-3 col-xs-6 item">
+                <h3>服务</h3>
+                <p class="en">SERVICES</p>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">服务理念</a>
+                        </li>
+                        <li>
+                            <a href="/cases">服务案列</a>
+                        </li>
+                        <li>
+                            <a href="/projects">项目介绍</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="col-md-3 col-xs-6 item">
+                <h3>导航</h3>
+                <p class="en">NAVIGATION</p>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="/">主页</a>
+                        </li>
+                        <li>
+                            <a href="/about">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="/projects">服务项目</a>
+                        </li>
+                        <li>
+                            <a href="/cases">服务案列</a>
+                        </li>
+                        <li>
+                            <a href="/jobs">人才招聘</a>
+                        </li>
+                        <li>
+                            <a href="/contact">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 item">
+                <h3>联系我们</h3>
+                <p class="en">CONTACT</p>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="tel:13183813382">13183813382</a>
+                        </li>
+                        <li>
+                            微信公众号：成都顺洁环卫
+                        </li>
+                        <li>
+                            邮箱：<a href="mailto:807451203@qq.com">807451203@qq.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="col-md-3 item">
+                <h3>联系我们</h3>
+                <p class="en">CONTACT</p>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="tel:13183813382">13183813382</a>
+                        </li>
+                        <li>
+                            微信公众号：成都顺洁环卫
+                        </li>
+                        <li>
+                            邮箱：<a href="mailto:807451203@qq.com">807451203@qq.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+        <div class="row center">
+            <p>Copyright © 2018 &nbsp; <a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备18001078号</a></p>
         </div>
         <!-- <script src="https://s22.cnzz.com/z_stat.php?id=1272839151&web_id=1272839151" language="JavaScript"></script> -->
     </footer>

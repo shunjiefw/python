@@ -4,6 +4,9 @@
     color: #fff;
     margin: 15px 0;
 }
+.projects{
+    padding-bottom: 30px;
+}
 .service-detail .ser-pro img{
     width: 100%;
 }
@@ -35,9 +38,6 @@
 .serv-cha .col-md-3{
     padding-bottom: 15px;
 }
-.serv-cha .item{
-    padding: 0 38px;
-}
 .serv-cha .item img{
     width: 100%;
 }
@@ -64,9 +64,7 @@
 .tools .msg-body{
     color: #c5baba;
     text-align: left;
-}
-.item-jt{
-    padding: 0 30px;
+    height: 90px;
 }
 .item-jt .block-img img{
     height: 230px;
@@ -75,11 +73,12 @@
     padding: 20px;
     color: #000;
 }
-.project-item{
-    padding: 0 30px;
-}
 @media (max-width: 768px){
     .serv-cha .item{
         padding: 0 5px;
     }
+}
+.service-detail .ser-pro .detail .tips .icon:hover{
+    background-color: #57546F;
+    color: #fff;;
 }

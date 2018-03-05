@@ -2,6 +2,9 @@
 .jobs{
     padding: 20px 0;
 }
+.jobs .container{
+    padding: 0;
+}
 .jobs .bg-detail{
     position: relative;
 }
@@ -9,7 +12,7 @@
     position: absolute;
     top: 30px;
     background-color: #57546F;
-    width: 80%;
+    width: 60%;
     height: 50px;
     line-height: 50px;
     text-align: right;
@@ -44,11 +47,11 @@
 }
 .jobs .bg-detail .wages{
     top: 100px;
-    width: 60%;
+    width: 40%;
 }
 .jobs .bg-detail .resume{
     top: 170px;
-    width: 50%;
+    width: 30%;
 }
 .text-l{
     text-align: left;

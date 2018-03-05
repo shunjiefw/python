@@ -18,6 +18,20 @@ body{
     background-color: #fff;
     overflow-x: hidden;
 }
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
 .color-d{
     background-color: #57546F
 }
@@ -28,10 +42,9 @@ a{
     color: #fff;
     text-decoration: none;
 }
-#nav{
+/* #nav .container{
     background-color: #CCBA7C;
-
-}
+} */
 .carousel-indicators .active{
     background-color: #57546F;
 }
@@ -40,7 +53,7 @@ a{
     border: none;
 }
 .nav-img{
-    height: 70px;
+    height: 100%;
 }
 .navbar-brand{
     padding: 0;
@@ -48,7 +61,20 @@ a{
 }
 #nav-a{
     background-color: #57546F;
-    padding: 0 50px;
+    padding: 10px 40px 10px 30px;
+}
+#nav-a .txt{
+    margin-top: 19px;
+    padding-left: 5px;
+}
+#nav-a .txt .title{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: -5px;
+}
+#nav-a .txt .en-title{
+    font-size: 12px;
+    color: #aaa9b6;
 }
 .navbar{
     border: none;
@@ -67,16 +93,18 @@ ul li{
     list-style: none;
 }
 #main_footer .item{
-    padding: 40px 50px;
+    height: 240px;
 }
 #main_footer .item h3{
     margin-bottom: 0;
+    font-size: 20px;
 }
 #main_footer .item .en{
     color: #C2C1CF;
 }
 #main_footer .item .links{
-    padding-top: 20px;
+    padding-top: 5px;
+    font-size: 12px;
 }
 #main_footer .item .links ul li{
     padding: 3px 0;
@@ -151,7 +179,11 @@ ul li{
     }
 }
 .navbar-fixed-top{
-    background: rgba(204, 186, 124, 0.7) !important;
+    background: rgba(204, 186, 124, 0.8) !important;
+    transition: All 0.4s;
+    -webkit-transition: All 0.4s;
+    -moz-transition: All 0.4s;
+    -o-transition: All 0.4s;
 }
 #nav .container{
     position: relative;
@@ -159,8 +191,28 @@ ul li{
 .a-banner{
     position: absolute;
     top: -450px;
-    left: 0;
+    left: 30px;
 }
 .a-banner img{
     width: 80px;
+}
+#main_footer{
+    padding: 0 200px;
+}
+.pd-100{
+    padding: 0 100px;
+}
+@media (max-width: 768px){
+    #main_footer{
+        padding: 0 20px;
+    }
+    .pd-100{
+        padding: 20px !important;
+    }
+}
+#nav .container{
+    background-color: #CCBA7C;
+}
+.navbar-fixed-top .container{
+    background: rgba(204, 186, 124, 0.8) !important;
 }

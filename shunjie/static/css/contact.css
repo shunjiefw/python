@@ -6,6 +6,11 @@
     color: #000;
     font-size: 16px;
 }
-.desc .img{
-    width: 800px;
+.b-img{
+    padding: 0 140px;
+}
+@media (max-width: 768px){
+    .b-img{
+        padding: 0 20px;
+    }
 }
