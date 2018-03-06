@@ -28,9 +28,7 @@
     -ms-transform: scale(1.1);
 }
 .items-case{
-    padding: 0 80px;
-    width: 900px;
-    margin: 0 auto;
+    padding: 15px 200px;
 }
 .items-case .img{
     width: 100%;
@@ -48,19 +46,24 @@
 .a-case{
     display: block;
     position: relative;
+    overflow: hidden;
 }
 .a-case .hov{
-    background: rgba(1, 1, 1,0.7);
+    background: rgba(1, 1, 1,0.6);
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
     line-height: 300px;
-    display: none;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
 .a-case:hover .hov{
-    display: block;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 .a-case .hov>span{
     padding: 5px 15px;

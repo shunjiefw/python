@@ -92,6 +92,9 @@ a:hover{
 ul li{
     list-style: none;
 }
+#main_footer{
+    margin-bottom: 30px;
+}
 #main_footer .item{
     height: 240px;
 }
@@ -113,6 +116,9 @@ ul li{
     color: #000000;
     font-size: 28px;
     margin-bottom: 0;
+}
+.low{
+    padding: 15px 0;
 }
 .title-p{
     color: #A9A9A9;
@@ -179,7 +185,7 @@ ul li{
     }
 }
 .navbar-fixed-top{
-    background: rgba(204, 186, 124, 0.8) !important;
+    background: rgba(204, 186, 124, 0.7) !important;
     transition: All 0.4s;
     -webkit-transition: All 0.4s;
     -moz-transition: All 0.4s;
@@ -197,7 +203,7 @@ ul li{
     width: 80px;
 }
 #main_footer{
-    padding: 0 200px;
+    padding: 60px 200px 15px 220px;
 }
 .pd-100{
     padding: 0 100px;
@@ -214,5 +220,13 @@ ul li{
     background-color: #CCBA7C;
 }
 .navbar-fixed-top .container{
-    background: rgba(204, 186, 124, 0.8) !important;
+    background: rgba(204, 186, 124, 0.7) !important;
+}
+.bottom-img>img{
+    width: 40px;
+    height: 40px;
+}
+.wxewm{
+    width: 100px;
+    height: 100px;
 }
