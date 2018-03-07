@@ -140,8 +140,8 @@ ul li{
 #top{
     display: inline-block;
     position: fixed;
-    right: 10px;
-    bottom: 60px;
+    right: 5px;
+    bottom: 35px;
     width: 48px;
     height: 48px;
     background: url(/static/images/top.png) no-repeat;
@@ -206,7 +206,7 @@ ul li{
     padding: 60px 200px 15px 220px;
 }
 .pd-100{
-    padding: 0 100px;
+    padding: 0 130px;
 }
 @media (max-width: 768px){
     #main_footer{

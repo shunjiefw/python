@@ -85,10 +85,10 @@
         height: 250px;
         overflow-y: auto;
     }
-    #JS_pay{
-        height: 190px;
+    #JS_pay .JS_item{
+        height: 199px;
     }
-    #JS_resume{
+    #JS_resume .JS_item{
         height: 130px;
     }
     .main-plane{

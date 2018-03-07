@@ -78,7 +78,7 @@
         padding: 0 5px;
     }
 }
-.service-detail .ser-pro .detail .tips .icon:hover{
+.service-detail .ser-pro:hover .tips>.icon{
     background-color: #57546F;
-    color: #fff;;
+    color: #fff;
 }

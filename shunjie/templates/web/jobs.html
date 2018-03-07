@@ -13,7 +13,7 @@
         </div>
         <div class="bg-detail wow fadeInUp">
             <img class="img" src="{% static "images/job_bg.jpg" %}" alt="">
-            <div class="JS_title item plane">
+            <div id="JS_plan" class="JS_title item plane">
                 <span class="sm">岗位介绍、前景 </span><span class="title">人才计划</span>
                 <div class="JS_item detail">
                     <h4>行业前景</h4>
@@ -42,9 +42,9 @@
                     </div>
                 </div>
             </div>
-            <div class="JS_title item wages">
+            <div id="JS_pay" class="JS_title item wages">
                 <span class="sm">福利待遇、培训晋升 </span><span class="title">福利待遇</span>
-                <div id="JS_pay" class="JS_item detail text-l">
+                <div class="JS_item detail text-l">
                     <dl>
                         <dt>1.出差津贴</dt>
                         <dd>出差外地的人员根据相应级别均可得到该项津贴。</dd>
@@ -65,9 +65,9 @@
                     </dl>
                 </div>
             </div>
-            <div class="JS_title item resume">
+            <div id="JS_resume" class="JS_title item resume">
                 <span class="title">简历投递</span>
-                <div id="JS_resume" class="JS_item detail">
+                <div class="JS_item detail">
                     <div class="main-plane">
                         <p><a href="mailto:807451203@qq.com">投 递 链 接</a></p>
                         <p><a href="javascript:;">模 板 下 载</a></p>
@@ -82,12 +82,41 @@
 {% block js %}
 <script>
     $(document).ready(function(){
+        /*
         $(".JS_title").bind("click",function(){
             $(this).children('.detail').toggle(200);
         });
+        */
         $(".JS_item").bind("click",function(event){
             event.stopPropagation();
         })
+        $("#JS_plan").click(function(){
+            $("#JS_pay,#JS_resume").children('.detail').hide();
+            var node = $(this).children('.detail');
+            if(node.is(':hidden')){
+            　　node.show();
+            }else{
+            　　node.hide();
+            }
+        });
+        $("#JS_pay").click(function(){
+            $("#JS_plan,#JS_resume").children('.detail').hide();
+            var node = $(this).children('.detail');
+            if(node.is(':hidden')){
+            　　node.show();
+            }else{
+            　　node.hide();
+            }
+        });
+        $("#JS_resume").click(function(){
+            $("#JS_pay,#plan").children('.detail').hide();
+            var node = $(this).children('.detail');
+            if(node.is(':hidden')){
+            　　node.show();
+            }else{
+            　　node.hide();
+            }
+        });
     });
 </script>
 {% endblock %}

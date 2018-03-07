@@ -7,38 +7,44 @@
 {% block content %}
 <div class="container">
     <div class="center">
-        <div class="plate">
-            <div class="row">
-                <img class="item-plate wow bounceIn" data-wow-delay="0.1s" src="{% static "images/sep_tank.png" %}" alt="">
-                <img class="item-plate wow bounceIn" data-wow-delay="0.2s" src="{% static "images/pip_home.png" %}" alt="">
-                <img class="item-plate wow bounceIn" data-wow-delay="0.3s" src="{% static "images/gov.png" %}" alt="">
-            </div>
-            <div class="row line-s">
-                <img class="item-plate wow bounceIn" data-wow-delay="0.4s" src="{% static "images/wall.png" %}" alt="">
-                <img class="item-plate wow bounceIn" data-wow-delay="0.5s" src="{% static "images/cush_d.png" %}" alt="">
-            </div>
-            <div class="hex-box row">
-                <div class="hex hex-1">
-                    <div class="corner-1"></div>
-                    <div class="corner-2"></div>
-                </div>
-                <div class="hex hex-2">
-                    <div class="corner-1"></div>
-                    <div class="corner-2"></div>
-                </div>
-                <div class="hex hex-3">
-                    <div class="corner-1"></div>
-                    <div class="corner-2"></div>
-                </div>
-                <div class="hex hex-4">
-                    <div class="corner-1"></div>
-                    <div class="corner-2"></div>
-                </div>
-                <div class="hex hex-5">
-                    <div class="corner-1"></div>
-                    <div class="corner-2"></div>
-                </div>
-            </div>
+        <div class="hex-box">
+            <ul id="hexGrid">
+                <li class="hex wow" >
+                    <a class="hexIn" href="/projects/1/">
+                        <img src="{% static "/images/1.jpg" %}" alt="">
+                        <h1>化粪池清涛</h1>
+                        <p>查看</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="projects/2/">
+                        <img src="{% static "/images/2.jpg" %}" alt="">
+                        <h1>家庭管道疏通</h1>
+                        <p>查看</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="projects/3/">
+                        <img src="{% static "/images/3.jpg" %}" alt="">
+                        <h1>生活厨房清洗</h1>
+                        <p>查看</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="projects/1/">
+                        <img src="{% static "/images/4.jpg" %}" alt="">
+                        <h1>市政管道改造</h1>
+                        <p>查看</p>
+                    </a>
+                </li>
+                <li class="hex">
+                    <a class="hexIn" href="projects/1/">
+                        <img src="{% static "/images/5.jpg" %}" alt="">
+                        <h1>外墙清洗</h1>
+                        <p>查看</p>
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="wow fadeInUp">
             <h1 class="title">我们的服务</h1>
